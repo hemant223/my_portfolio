@@ -46,7 +46,7 @@ const hackerfooter =require('../assets/images/hackerfooter.png');
     {!toogleMenu? <img src={memuIcon} style={{height:35,width:35,}} />:
      <img src={crossIcon} style={{height:40,width:45,}} />}
      </div>
-     <div style={{fontFamily:'fantasy',color:'#fff',fontSize:20}}>
+     <div style={{fontFamily:'sans-serif',color:'#fff',fontSize:20,letterSpacing:2,fontSize:25}}>
      Welcome
      </div>
      <div style={{height:50,width:50,}}>
@@ -56,11 +56,11 @@ const hackerfooter =require('../assets/images/hackerfooter.png');
 
        {/* drawer Items  */}
     <div style={{height:toogleMenu?255:0,background:'linear-gradient(90deg, rgba(28,30,30,1) 45%, rgba(84,84,85,1) 100%, rgba(0,212,255,1) 100%)',transition: 'height 0.5s ease',overflow: 'hidden',lineHeight:2,display:'flex',flexDirection:'column',alignItems:'center',zIndex:1}}>  
-        <a href='/'><div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20,}} >Home</div></a> 
+        <a style={{textDecoration:'none'}} href='/'><div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20,}} >Home</div></a> 
          <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>My Projects</div>
-        <a href='https://github.com/hemant223'> <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>My Git Hub</div></a>
+        <a style={{textDecoration:'none'}} href='https://github.com/hemant223'> <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>My Git Hub</div></a>
          <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>Check Out My Resume</div>
-       <a href='https://www.linkedin.com/in/hemant-singh-302492235/'>  <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>Go to my Linkedin Profile</div></a>
+       <a style={{textDecoration:'none'}} href='https://www.linkedin.com/in/hemant-singh-302492235/'>  <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>Go to my Linkedin Profile</div></a>
         <a style={{textDecoration:'none'}} href='https://instagram.com/hemnttt?igshid=OGQ5ZDc2ODk2ZA=='> <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>Go to my Instagram</div></a>
 
       </div>
@@ -81,7 +81,7 @@ const hackerfooter =require('../assets/images/hackerfooter.png');
     is 
   </div>
   <div  style={{marginLeft:15,textShadow:'2px 2px gray'}}>
-    Hemu !
+    Hemant !  
   </div>
 </div>
   </div>
