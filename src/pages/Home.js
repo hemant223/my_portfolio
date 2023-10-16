@@ -56,12 +56,12 @@ const hackerfooter =require('../assets/images/hackerfooter.png');
 
        {/* drawer Items  */}
     <div style={{height:toogleMenu?255:0,background:'linear-gradient(90deg, rgba(28,30,30,1) 45%, rgba(84,84,85,1) 100%, rgba(0,212,255,1) 100%)',transition: 'height 0.5s ease',overflow: 'hidden',lineHeight:2,display:'flex',flexDirection:'column',alignItems:'center',zIndex:1}}>  
-         <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20,}} >Home</div>
+        <a href='/'><div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20,}} >Home</div></a> 
          <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>My Projects</div>
-         <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>My Git Hub</div>
+        <a href='https://github.com/hemant223'> <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>My Git Hub</div></a>
          <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>Check Out My Resume</div>
-         <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>Go to my Linkedin Profile</div>
-         <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>Go to my Instagram</div>
+       <a href='https://www.linkedin.com/in/hemant-singh-302492235/'>  <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>Go to my Linkedin Profile</div></a>
+        <a style={{textDecoration:'none'}} href='https://instagram.com/hemnttt?igshid=OGQ5ZDc2ODk2ZA=='> <div style={{fontFamily:'serif',color:'#fff',fontWeight:900,fontSize:20}}>Go to my Instagram</div></a>
 
       </div>
       
@@ -93,7 +93,7 @@ const hackerfooter =require('../assets/images/hackerfooter.png');
      
 </div>
 
-<div  style={{fontFamily:'cursive',backgroundColor:'#fff', backgroundImage:`url(${bg1})`,backgroundRepeat:"no-repeat",backgroundSize:'cover',color:'#000',textShadow:'2px 2px gray',fontSize:20,display:'flex',justifyContent:'center',marginTop:-3,paddingTop:30,flexDirection:'column',paddingBottom:10}}>
+<div  style={{fontFamily:'cursive',backgroundColor:'#fff', backgroundImage:`url(${bg1})`,backgroundRepeat:"no-repeat",backgroundSize:'cover',color:'#000',fontSize:20,display:'flex',justifyContent:'center',marginTop:-3,paddingTop:30,flexDirection:'column',paddingBottom:10}}>
    <div style={{marginLeft:20}}>
     Currently I am Working on this Technologies :-✨✨
    </div>
@@ -151,7 +151,7 @@ the services and products that the company holds. It is both convenient and esse
     </div>
 
 {/* footer */}
-<div style={{height:200,background:'linear-gradient(90deg, rgba(28,30,30,1) 45%, rgba(84,84,85,1) 100%, rgba(0,212,255,1) 100%)',display:'flex',alignItems:'center'}}>
+<div style={{background:'linear-gradient(90deg, rgba(28,30,30,1) 45%, rgba(84,84,85,1) 100%, rgba(0,212,255,1) 100%)',display:'flex',alignItems:'center',padding:10,bottom:0}}>
      <div>
        <div style={{color:'#fff',fontFamily:'monospace',fontSize:16,display:'flex',alignItems:'center',paddingTop:20,paddingLeft:20}}>
          Developed by Hemu
