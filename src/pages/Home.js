@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 
 const memuIcon =require('../assets/images/menu.png');
@@ -26,21 +26,28 @@ const twitter =require('../assets/images/twitter.png');
 const fb =require('../assets/images/fb.png');
 const call =require('../assets/images/call.png');
 const hackerfooter =require('../assets/images/hackerfooter.png');
+const loading =require('../assets/images/loder.gif');
 
 
  const Home=()=> {
    const [toogleMenu, setToogleMenu] = useState(false)
+   const [loadingHandler, setLoadingHandler] = useState(false)
     const handleMemuClick=()=>{
         setToogleMenu(!toogleMenu)
     }
 
-
-
-
+    useEffect(() => {
+    setTimeout(() => {
+      setLoadingHandler(true)
+    }, 2000);
+    }, [])
+    
   return (
     <>
-
-{/* header */}
+{ !loadingHandler? <div style={{height:'100vh',width:'100wh',display:'flex',alignItems:'center',justifyContent:'center'}}>
+<img src={loading} style={{height:'auto',width:'50%'}}  />
+</div>:
+ <div>
      <div style={{display:'flex',background:'linear-gradient(90deg, rgba(28,30,30,1) 45%, rgba(84,84,85,1) 100%, rgba(0,212,255,1) 100%)',height:60,alignItems:'center',justifyContent:'space-between',}}>
      <div onClick={()=>{handleMemuClick();}} style={{marginLeft:10,top:0}}>
     {!toogleMenu? <img src={memuIcon} style={{height:35,width:35,}} />:
@@ -181,6 +188,7 @@ the services and products that the company holds. It is both convenient and esse
      <img src={hackerfooter} style={{height:'auto',width:200,}} />
      </div>
 </div>
+ </div>}
 
     </>
   )
